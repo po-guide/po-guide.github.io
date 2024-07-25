@@ -1,0 +1,905 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="po-14-sub/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.8">
+    
+    
+      
+        <title>Pocket Operator Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.046329b4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13.274 9.537v-.001l-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074ZM4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75Z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.484 4.484 0 0 1-.563-1.191 3.835 3.835 0 0 1-.05-2.063 4.647 4.647 0 0 1-2.025-.293.75.75 0 0 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.747.747 0 0 1 1.06 0 .748.748 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.425 2.425 0 0 1-.507-.441 3.075 3.075 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19a.884.884 0 0 1 .01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7 5.527c-.814-.68-1.75-1.462-2.692-2.619a3.737 3.737 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353V.75Z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.756 2.756 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6.24 6.24 0 0 0-.26.16.952.952 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661.103-.067.207-.132.313-.195l.007-.004c.1-.061.182-.11.258-.161a.969.969 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.612.612 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1.01 1.01 0 0 0-.34.398ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343h-.001a8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746Zm1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275ZM6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L6.94 8 4.97 6.03a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018Z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.249 1.249 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004L9.503.429Zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006a.036.036 0 0 0-.004-.009l-.006-.006-.008-.001c-.003 0-.006.002-.009.004Z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.488 3.488 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327c0 .1-.009.197-.025.292.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5c0 .409-.049.806-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A4.997 4.997 0 0 1 8 16a4.997 4.997 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5.036 5.036 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.677 1.677 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06Zm.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.172.172 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173Z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.746.746 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Zm4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5Zm0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5ZM2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0Z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="hide-nav-heading.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pocket-operator-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Pocket Operator Guide" class="md-header__button md-logo" aria-label="Pocket Operator Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zm32 64h192c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32zm32 160a32 32 0 1 1-64 0 32 32 0 1 1 64 0zM96 352a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm-32 64c0-17.7 14.3-32 32-32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zm128-160a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1-64 0 32 32 0 1 1 64 0zm64-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1-64 0 32 32 0 1 1 64 0zm-32 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pocket Operator Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Pocket Operator Guide" class="md-nav__button md-logo" aria-label="Pocket Operator Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zm32 64h192c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32zm32 160a32 32 0 1 1-64 0 32 32 0 1 1 64 0zM96 352a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm-32 64c0-17.7 14.3-32 32-32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zm128-160a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1-64 0 32 32 0 1 1 64 0zm64-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1-64 0 32 32 0 1 1 64 0zm-32 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64z"/></svg>
+
+    </a>
+    Pocket Operator Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#po-10-series" class="md-nav__link">
+    PO-10 Series
+  </a>
+  
+    <nav class="md-nav" aria-label="PO-10 Series">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#po-12-rhythm" class="md-nav__link">
+    PO-12 - Rhythm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-14-sub" class="md-nav__link">
+    PO-14 - Sub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-16-factory" class="md-nav__link">
+    PO-16 - Factory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#po-20-series" class="md-nav__link">
+    PO-20 Series
+  </a>
+  
+    <nav class="md-nav" aria-label="PO-20 Series">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#po-20-arcade" class="md-nav__link">
+    PO-20 - Arcade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-24-office" class="md-nav__link">
+    PO-24 - Office
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-28-robot" class="md-nav__link">
+    PO-28 - Robot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#po-30-series" class="md-nav__link">
+    PO-30 Series
+  </a>
+  
+    <nav class="md-nav" aria-label="PO-30 Series">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#po-32-tonic" class="md-nav__link">
+    PO-32 - Tonic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-33-ko" class="md-nav__link">
+    PO-33 - K.O!
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-35-speak" class="md-nav__link">
+    PO-35 - Speak
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limited-editions" class="md-nav__link">
+    Limited Editions
+  </a>
+  
+    <nav class="md-nav" aria-label="Limited Editions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#po-33-ghostly-edition-ko" class="md-nav__link">
+    PO-33 - Ghostly Edition (K.O!)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-137-rick-morty-speak" class="md-nav__link">
+    PO-137 - Rick &amp; Morty (Speak)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-128-megaman-robot" class="md-nav__link">
+    PO-128 - Megaman (Robot)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-133-street-fighter-ko" class="md-nav__link">
+    PO-133 - Street Fighter (K.O!)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-notes" class="md-nav__link">
+    General Notes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linksreference" class="md-nav__link">
+    Links/Reference
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PO-10 Series
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            PO-10 Series
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="po-14-sub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PO-14 - Sub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#po-10-series" class="md-nav__link">
+    PO-10 Series
+  </a>
+  
+    <nav class="md-nav" aria-label="PO-10 Series">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#po-12-rhythm" class="md-nav__link">
+    PO-12 - Rhythm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-14-sub" class="md-nav__link">
+    PO-14 - Sub
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-16-factory" class="md-nav__link">
+    PO-16 - Factory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#po-20-series" class="md-nav__link">
+    PO-20 Series
+  </a>
+  
+    <nav class="md-nav" aria-label="PO-20 Series">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#po-20-arcade" class="md-nav__link">
+    PO-20 - Arcade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-24-office" class="md-nav__link">
+    PO-24 - Office
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-28-robot" class="md-nav__link">
+    PO-28 - Robot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#po-30-series" class="md-nav__link">
+    PO-30 Series
+  </a>
+  
+    <nav class="md-nav" aria-label="PO-30 Series">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#po-32-tonic" class="md-nav__link">
+    PO-32 - Tonic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-33-ko" class="md-nav__link">
+    PO-33 - K.O!
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-35-speak" class="md-nav__link">
+    PO-35 - Speak
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limited-editions" class="md-nav__link">
+    Limited Editions
+  </a>
+  
+    <nav class="md-nav" aria-label="Limited Editions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#po-33-ghostly-edition-ko" class="md-nav__link">
+    PO-33 - Ghostly Edition (K.O!)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-137-rick-morty-speak" class="md-nav__link">
+    PO-137 - Rick &amp; Morty (Speak)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-128-megaman-robot" class="md-nav__link">
+    PO-128 - Megaman (Robot)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-133-street-fighter-ko" class="md-nav__link">
+    PO-133 - Street Fighter (K.O!)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-notes" class="md-nav__link">
+    General Notes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linksreference" class="md-nav__link">
+    Links/Reference
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="pocket-operator-guide">Pocket Operator Guide</h1>
+<h2 id="po-10-series">PO-10 Series</h2>
+<p>In collaboration with Cheap Monday, the PO-10 series was unveiled at the 2015
+NAMM Show. It consists of three models, an approach Teenage Engineering would
+repeat for the other two batches.</p>
+<p>The original three Pocket Operatorstrio consist of:</p>
+<h3 id="po-12-rhythm">PO-12 - Rhythm</h3>
+<p><a href="media/po-12-rhythm.png"><img alt="" src="media/po-12-rhythm-thumbnail.png" /></a></p>
+<p>A basic drum machine with 16 sounds and 16 effects. Two of the sounds are
+melodic, and can be sequenced in scales. It has a maximum multitimbrality of six
+parts at a time. Its design is of a sewing machine.</p>
+<h3 id="po-14-sub"><a href="po-14-sub/">PO-14 - Sub</a></h3>
+<p><a href="media/po-14-sub.png"><img alt="" src="media/po-14-sub-thumbnail.png" /></a></p>
+<p>A bass synthesizer with 15 sounds that also includes a micro drum machine with
+16 parts. You can play the sounds over two octaves using the buttons as a
+keyboard. Its design is of a submarine.</p>
+<h3 id="po-16-factory">PO-16 - Factory</h3>
+<p><a href="media/po-16-factory.png"><img alt="" src="media/po-16-factory-thumbnail.png" /></a></p>
+<p>A melodic lead synthesizer with 15 lead sounds and (like the PO-14) a micro drum
+machine with 16 sounds. It focuses on robotic sounds. Lead sounds are able to be
+played diatonically in either C major or A minor, using the buttons as a
+keyboard. Its design is of a construction site.</p>
+<hr />
+<h2 id="po-20-series">PO-20 Series</h2>
+<p>Following on from the positive reception of the Pocket Operators, Teenage
+Engineering released the PO-20 series one year later at the 2016 NAMM Show. The
+PO-20 series is based around 8-bit sounds, taking inspiration from old chiptune
+synthesizers. The PO-20s were again made in collaboration with Cheap Monday.</p>
+<p>There are three models in the PO-20 series:</p>
+<h3 id="po-20-arcade">PO-20 - Arcade</h3>
+<p><a href="media/po-20-arcade.png"><img alt="" src="media/po-20-arcade-thumbnail.png" /></a></p>
+<p>Described by MusicRadar as a "Chiptune groovebox", the PO-20 features 16 drum
+and melodic parts based on sounds from old arcade machines. It has a chord mode,
+with 16 different chords able to be chained together like patterns. The melodic
+scale that the sounds play in changes in accordance with the current chord.
+Based on chord mode, the PO-20 also has a "chord machine" function which plays a
+drone of whatever chord is active. The drone is able to be sidechained to the
+kick sound. The PO-20's design is of an arcade cabinet.</p>
+<h3 id="po-24-office">PO-24 - Office</h3>
+<p><a href="media/po-24-office.png"><img alt="" src="media/po-24-office-thumbnail.png" /></a></p>
+<p>A groovebox inspired by vintage office equipment. It combines both real samples
+of office hardware and original synthesizer engines. It has a solo function,
+which mutes all other parts for the duration of a 16 step pattern. It also
+includes a "step multiplier" which acts like a stutter effect, repeating the
+note. The PO-24's design is of typewriter.</p>
+<h3 id="po-28-robot">PO-28 - Robot</h3>
+<p><a href="media/po-28-robot.png"><img alt="" src="media/po-28-robot-thumbnail.png" /></a></p>
+<p>A lead synthesizer based on 8-bit sounds. It features 15 different lead
+synthesizer engines and a 16-part micro drum machine. It can be played live by
+using the buttons as a keyboard but also features a sequencer. The Robot has a
+glide function that can add portamento between notes or function as vibrato.
+Its design is of a robot arm.</p>
+<hr />
+<h2 id="po-30-series">PO-30 Series</h2>
+<p>The PO-30 series of Pocket Operators was released at two times. The PO-32 Tonic
+was released at NAMM 2017; the PO-33 K.O! and PO-35 Speak were released a year
+later in 2018. The PO-30 series is also known as the Metal Series - their
+packaging is in the colour of precious metals (Speak is bronze, K.O! is silver,
+Tonic is gold). Each model in the Metal series has a microphone to provide
+connections to external devices:</p>
+<h3 id="po-32-tonic">PO-32 - Tonic</h3>
+<p><a href="media/po-32-tonic.png"><img alt="" src="media/po-32-tonic-thumbnail.png" /></a></p>
+<p>A drum machine based on the MicroTonic VST plugin made in collaboration with its
+developer Magnus Lidström. It has control over each part's pitch and morph
+(blend between two sounds). Tonic can have sounds and patches replaced by data
+transferred from MicroTonic using the microphone/line in. Its design is of
+people drinking at a bar and was made by Ivana Kouthoofd, the nine-year-old
+daughter of Teenage Engineering's CEO.</p>
+<h3 id="po-33-ko">PO-33 - K.O!</h3>
+<p><a href="media/po-33-ko.png"><img alt="" src="media/po-33-ko-thumbnail.png" /></a></p>
+<p>A sampler. Samples can be recorded through line in or microphone and sorted into
+one of eight melodic tracks or one of eight drum tracks. Melodic tracks are
+capable of playing chromatically while drum tracks are played as hits. The K.O!
+has a maximum timbrality of four samples, but all samples are monophonic. Each
+track has a multi-mode digital filter (with control over resonance) which can be
+controlled by the sequencer. The K.O! can back-up and load data as audio. The
+design is of a boxing match.</p>
+<h3 id="po-35-speak">PO-35 - Speak</h3>
+<p><a href="media/po-35-speak.png"><img alt="" src="media/po-35-speak-thumbnail.png" /></a></p>
+<p>A speech synthesizer. It has 16 tracks, of which 1-15 use the speech synthesis
+engine and 16 uses a monophonic 16 part version of the PO-32's sound engine.
+Sounds are used in the PO-35 by recording through the microphone or line-in. The
+PO-35 has a total of 120 seconds of recording memory: Eight seconds per slot.
+There are eight voices to choose from for the speech engine: Natural, Autotune,
+Retro, Noise, Robot, Fifth, Vocoder and Synth. Control over each engine is made
+using the Pitch, Formant, Start point and Speed parameters. Unlike other Pocket
+Operators, the Speech only has eight effects. The PO-35 can play in four scales
+named Major, Minor, Blues and Arab. Its design is of a group of people talking.</p>
+<hr />
+<h2 id="limited-editions">Limited Editions</h2>
+<h3 id="po-33-ghostly-edition-ko">PO-33 - Ghostly Edition (K.O!)</h3>
+<p><a href="media/po-33-ghostly-edition.jpg"><img alt="" src="media/po-33-ghostly-edition-thumbnail.jpg" /></a></p>
+<p>In April 2019, a limited edition run was created of the PO-33 K.O!. A commission
+by the record label Ghostly International for their 20th anniversary, it
+features built-in samples by the artist Steve Hauschildt. Other than that, an
+increased price to $135 and an updated color scheme, the PO-33 Ghostly Edition
+is functionally the same as the regular PO-33.</p>
+<h3 id="po-137-rick-morty-speak">PO-137 - Rick &amp; Morty (Speak)</h3>
+<p><a href="media/po-137-rick-and-morty.png"><img alt="" src="media/po-137-rick-and-morty-thumbnail.png" /></a></p>
+<p>In May 2019, Teenage Engineering released the PO-137 Rick and Morty, a
+collaboration with the co-creator of the Adult Swim series Justin Roiland. A
+design based on the PO-35 speak, the PO-137 is a vocal synthesizer and features
+a microphone to sample into 8 voice types. It differs by the fact that it has
+custom voice lines pre-loaded. All are voiced by Roiland.</p>
+<h3 id="po-128-megaman-robot">PO-128 - Megaman (Robot)</h3>
+<p><a href="media/po-128-megaman.png"><img alt="" src="media/po-128-megaman-thumbnail.png" /></a></p>
+<p>Like the other limited edition releases, the PO-128 has Megaman songs loaded as
+patterns in the sequencer. Its design is also inspired by the original game.</p>
+<h3 id="po-133-street-fighter-ko">PO-133 - Street Fighter (K.O!)</h3>
+<p><a href="media/po-133-street-fighter.jpg"><img alt="" src="media/po-133-street-fighter-thumbnail.jpg" /></a></p>
+<p>Like the other limited edition releases, the PO-133 has sampled sounds from the
+original game in its memory. Its design is also inspired by the original game.</p>
+<h2 id="general-notes">General Notes</h2>
+<ul>
+<li>All pocket operators are mono</li>
+</ul>
+<h2 id="linksreference">Links/Reference</h2>
+<ul>
+<li><a href="https://cheatography.com/naenyn/cheat-sheets/teenage-engineering-pocket-operators/">Pocket Operators Cheat Sheet by Naenyn</a></li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand"], "search": "assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>
